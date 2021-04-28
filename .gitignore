@@ -102,3 +102,37 @@ dist
 
 # TernJS port file
 .tern-port
+
+# 0HN0
+0HN0/
+# find . -type f -name '._*' -delete
+# git rm -r --cached .
+
+# Duplicates
+._*
+
+# npm version major --- change #.0.0 --- npm version major && git push heroku master && git push origin master
+# npm version minor --- change 0.#.0 --- npm version minor && git push heroku master && git push origin master
+# npm version patch --- change 0.0.# --- npm version patch && git push heroku master && git push origin master
+
+# Some files
+404.html
+about.html
+appointment.html
+blog.html
+comingsoon.html
+contact.html
+doctors.html
+faq.html
+mail.php
+maintenance.html
+prevention.html
+sample-right-sidebar.html 
+search-nothing.html 
+search.html 
+single-blog.html 
+symptom-checker.html 
+symptom.html 
+tracker.html 
+typography.html
+virus-checker.html 
