@@ -80,7 +80,7 @@
     <!-- <link rel="stylesheet" href="https://desaign.app/clients/cli/css/normalize.css" /> -->
 
     <!-- JQuery -->
-    <script src="https://desaign.app/clients/cli/js/jquery.js" type="text/javascript"></script>
+    <!-- <script src="https://desaign.app/clients/cli/js/jquery.js" type="text/javascript"></script> -->
 
     <!-- Bootstrap -->
     <!-- <link rel="stylesheet" href="https://desaign.app/clients/cli/css/bootstrap.css" /> -->
@@ -482,10 +482,12 @@
           <div class="tracker_text">
             <h5>Worldwide Tracker</h5>
             <h2>Confirmed Coronavirus Cases</h2>
-            <p>Last updated: <span class="todayDate"></span></p>
+            <p>Last updated: <script>
+              document.write(new Date().toLocaleString());
+            </script></p>
           </div>
           <div class="row tracker_inner">
-            <div class="col-lg-3 col-6 wow fadeIn" data-wow-delay="300">
+            <div class="col-xl-3 col-6 wow fadeIn" data-wow-delay="300">
               <div class="media">
                 <div class="d-flex">
                   <img src="assets/images/icon/corona-red-1.png" alt="" />
@@ -496,7 +498,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-6 wow fadeIn" data-wow-delay="500">
+            <div class="col-xl-3 col-6 wow fadeIn" data-wow-delay="500">
               <div class="media">
                 <div class="d-flex">
                   <img src="assets/images/icon/corona-green-1.png" alt="" />
@@ -507,7 +509,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-6 wow fadeIn" data-wow-delay="400">
+            <div class="col-xl-3 col-6 wow fadeIn" data-wow-delay="400">
               <div class="media">
                 <div class="d-flex">
                   <img src="assets/images/icon/corona-black-1.png" alt="" />
@@ -518,7 +520,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-6 wow fadeIn" data-wow-delay="600">
+            <div class="col-xl-3 col-6 wow fadeIn" data-wow-delay="600">
               <div class="media">
                 <div class="d-flex">
                   <img src="assets/images/icon/corona-yellow-1.png" alt="" />
@@ -535,10 +537,6 @@
           </div>
         </div>
       </section>
-      <script>
-        let d = new Date().toLocaleString();
-        $(".todayDate").text(d);
-      </script>
       <!--================End Worldwide Tracker Area =================-->
 
       <!--================Corona Map Area =================-->
